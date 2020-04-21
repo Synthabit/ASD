@@ -4,10 +4,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Analytical Steam Database</title>
+
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/all.css"> <!-- Fontawesome 5.13 -->
     </head>
     <body>
         <!-- nav -->
+        <div class="nav">
+            <div class="container">
+                <a href="#home">Home</a>
+                <div class="search-container">
+                    <form class="search" action="">
+                        <input type="text" id="search-input" placeholder="Search..." name="search">
+                        <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+                    </form> 
+                </div>
+            </div>
+        </div>
 
         <!-- jumbotron -->
 
@@ -15,6 +30,9 @@
 
         <!-- about: features -->
 
-        <!-- footers -->
+        <!-- footer -->
+
+        <!-- js -->
+        <script src="api-consume/request/loadPairs.js"></script>
     </body>
 </html>
